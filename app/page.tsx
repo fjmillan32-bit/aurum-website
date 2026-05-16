@@ -1,10 +1,10 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useState } from "react";
 import { 
   FaMapMarkerAlt, FaPhone, FaEnvelope, FaWhatsapp, 
   FaFacebook, FaTwitter, FaInstagram, FaLinkedin,
-  FaArrowRight, FaCheckCircle, FaChartLine, FaLeaf, FaBlockchain
+  FaChartLine, FaLeaf, FaNetworkWired
 } from "react-icons/fa";
 import Image from "next/image";
 
@@ -13,11 +13,8 @@ export default function Home() {
   const [dolarCop, setDolarCop] = useState<number | null>(null);
 
   useEffect(() => {
-    // API real de precios (ejemplo con GoldAPI - necesitarás key)
-    // Por ahora datos simulados pero actualizables
     const fetchPrices = async () => {
-      // Reemplazar con llamada a API real después
-      const goldUsdPerGram = 75.5; // USD/gramo
+      const goldUsdPerGram = 75.5;
       const usdCop = 4000;
       setGoldPrice(goldUsdPerGram);
       setDolarCop(usdCop);
@@ -47,7 +44,7 @@ export default function Home() {
       {/* HERO */}
       <section id="inicio" className="relative h-screen flex items-center justify-center text-white">
         <div className="absolute inset-0 z-0">
-          <img src="/hero.jpg" alt="Minería responsable" className="w-full h-full object-cover brightness-50" />
+          <img src="/hero.png" alt="Minería responsable" className="w-full h-full object-cover brightness-50" />
         </div>
         <div className="relative z-10 text-center px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-4">Asociación de Mineros <span className="text-amber-500">Aurum Mineral</span></h1>
@@ -109,8 +106,8 @@ export default function Home() {
               <p className="text-gray-300">Dosificación calculada y seguimiento del uso, bajando el ratio a menos de 2g Hg/g Au.</p>
             </div>
             <div className="bg-gray-800 p-6 rounded-xl text-center">
-              <FaBlockchain className="text-5xl text-amber-400 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Trazabilidad blockchain</h3>
+              <FaNetworkWired className="text-5xl text-amber-400 mx-auto mb-4" />
+              <h3 className="text-xl font-bold mb-2">Trazabilidad Blockchain</h3>
               <p className="text-gray-300">Cadena de custodia digital que garantiza origen ético y acceso a compradores formales.</p>
             </div>
           </div>
