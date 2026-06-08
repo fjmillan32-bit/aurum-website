@@ -87,7 +87,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* TECNOLOGÍA AURUM CONTROL */}
+            {/* TECNOLOGÍA AURUM CONTROL */}
       <section id="tecnologia" className="py-20 px-6 bg-gradient-to-r from-gray-800 to-gray-900 text-white">
         <div className="container mx-auto">
           <div className="text-center mb-12">
@@ -102,8 +102,8 @@ export default function Home() {
             </div>
             <div className="bg-gray-800 p-6 rounded-xl text-center">
               <FaLeaf className="text-5xl text-amber-400 mx-auto mb-4" />
-              <h3 className="text-xl font-bold mb-2">Reducción de mercurio</h3>
-              <p className="text-gray-300">Dosificación calculada y seguimiento del uso, bajando el ratio a menos de 2g Hg/g Au.</p>
+              <h3 className="text-xl font-bold mb-2">Tecnología que protege la tierra</h3>
+              <p className="text-gray-300">Operación 100% libre de mercurio. Tecnología limpia que cuida el ecosistema, el agua y la biodiversidad del Pacífico colombiano.</p>
             </div>
             <div className="bg-gray-800 p-6 rounded-xl text-center">
               <FaNetworkWired className="text-5xl text-amber-400 mx-auto mb-4" />
@@ -111,12 +111,28 @@ export default function Home() {
               <p className="text-gray-300">Cadena de custodia digital que garantiza origen ético y acceso a compradores formales.</p>
             </div>
           </div>
+          
+          {/* Botón para ir a la App */}
+          <div className="mt-12 text-center">
+            <a 
+              href="https://app.aurumineral.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-600 text-gray-900 font-bold px-8 py-4 rounded-xl text-lg transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+            >
+              🚀 Acceder a Aurum Control
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+            </a>
+            <p className="text-gray-400 text-sm mt-3">Prueba la plataforma de gestión minera más avanzada</p>
+          </div>
+          
           <div className="mt-12 flex justify-center">
             <img src="/tecnologia.jpg" alt="Aurum Control App" className="rounded-xl shadow-lg max-w-full h-auto" />
           </div>
         </div>
       </section>
-
       {/* RECURSOS MINEROS */}
       <section id="recursos" className="py-20 px-6 bg-white">
         <div className="container mx-auto">
